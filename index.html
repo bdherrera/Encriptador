@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>encriptador</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Encriptador </title>
+    <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+</head>
+<body>
+
+
+
+<header class="cabecera" id="cabeza">
+    <img src="data:image/png;base64,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" alt="Logo Alura Inicial A"><h1>Encriptador </h1>
+</header>
+
+<main>
+    <section class="contenedor-1" id="seccion-paso1">
+        <div class="captura">
+            <h2 class="titulo-h2">Paso 1 de 2</h2>
+            <p>Escribe el mensaje que deseas encriptar</p>
+            <textarea id="cajaTexto" class="input-texto" cols="5" rows="3" type="text" placeholder="Tu mensaje AQUÍ" label="required" autofocus></textarea>
+            <div class="aviso">
+                <img src="https://svgsilh.com/svg/98739.svg" width="20px" alt="Aviso minúsculas sin acento">Solo letras minúsculas y sin acentos.
+            </div>
+            <div class="botones">
+                <p>Haz click en el botón de la opción que deseas (encriptar / desencriptar).</p>
+                <button id="btn-encriptar" class="encriptar" onclick="encriptado()">Encriptar</button>
+                <button id="btn-desencriptar" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="seccion-2">
+                <article id="textoSalida">
+                    <div id="textoSalidaB">
+                        <img id="imacod" src="https://cdn-icons-png.flaticon.com/512/2572/2572665.png" alt="Encriptación" width="45px">
+                        <h2>No hay ningún mensaje a encriptar</h2>
+
+                    </div>
+                </article>
+                <div style="visibility: hidden;" id="seccion-bcopiar">
+                    <button style="visibility: hidden" id="copiar" class="botCopiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</main>
+<footer id="footer">
+    <p>Proyecto para portafolio profesional de Brayan David Herrera Acero 2023.</p>
+
+</footer>
+
+<script src="assets/script.js"></script>
+
+
+</body>
+</html>
